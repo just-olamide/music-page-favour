@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border box;
+}
+body{
+    background-color: antiquewhite;
+}
+#main{
+    border: 1px solid red ;
+    width: 100%;
+    display: flex;
+       flex-wrap: wrap;
+       justify-content: space-evenly;
+}
+#nav button{
+display: inline-block;
+width: 14%;
+/* float: right; */
+}
+.firstdiv{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+   /*  font-size: 10px */;
+}
+.imgdiv{
+    border: 2px solid black;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+}
+.mainconc{
+    width: 20%;
+    border: 3px solid green;
+     display: flex;
+    flex-wrap: wrap; 
+    margin: 10px;
+    border-radius: 20px;
+    padding: 20px 30px;
+    
+}
+.art{
+    margin: 10px;
+    border: 1px solid black;
+    display: block;
+    width: 100%;
+}
+.img{
+    width : 100%;
+    border-radius: 10px;
+}
+.timer{
+    display: flex;
+    justify-content: space-between;
+    margin: -10px 10px 0px;
+ /*    border: 2px solid */;
+    width: 100%;
+}
+.range{
+    width: 100%;
+    margin: 0 5px ;
+    padding: 0px !important;
+ 
+}
+.forward{
+    width: 100%;
+    /* height: 150px; */
+    border: 1px solid red
+}
+input, select {
+    width: 80%;
+    margin: 10px auto;
+    Padding: 5px;
+    display: flex;
+   height: 60px;
+   border-radius: 10px;
+    font-size: 20px
+}
+button{
+    width: 50%;
+   height: 60px;
+   font-size: 20px;
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   margin: 0 auto;
+   justify-content: center;
+}
+#main2{
+    display: none;
+    width: 100%;
+    background-color:pink ;
+   padding: 20px;
+}
+
+
+@media screen and (max-width:900px){
+.mainconc{
+    padding: 10px;
+    width: 70%;
+}
+    .art{
+        margin:5px;
+    }
+    .timer, .range{
+      margin: 5px;
+    }
+    .firstdiv{
+        padding: 5px;
+        margin: 5px;
+    }
+    #main2{
+        left: 10px;
+        width: 100%;
+        overflow: hidden;
+    }
+}

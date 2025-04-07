@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav id="nav">
+        <button onclick="sortAZ()">az</button>
+        <button onclick="filterPop()">Pop</button>
+        <button onclick="filterHippop()">Hip-pop</button>
+        <button onclick="filterRock()">Rock</button>
+
+        <button id="navbtn" class="navbtn">Upload music</button>
+<input type="text" placeholder="search here" id="searchbtn">
+    </nav>
+    
+    
+    <div id="filters">
+
+    </div>
+    <div id="main">
+   
+ </div>
+    
+    
+    <div id="main2">
+        <input type="text" id="textinput" placeholder="Title of your song">
+        <input type="text" id="artist" placeholder="Artist name">
+        <select id="selected">
+            <option value ="Select Category">Select Category</option>
+            <option value ="Pop">Pop</option>
+            <option value ="Rock">Rock</option>
+            <option value ="Hip-pop">Hip-pop</option>
+            
+           
+        </select>
+        
+       <input type="number" id="stoptime" placeholder="Song duration">
+            
+            
+        
+        <button onclick="addToPlay()">Add to list</button>
+        
+    
+             
+    </div>
+    
+    <script src="script.js"></script>
+   
+    
+</body>
+</html>
